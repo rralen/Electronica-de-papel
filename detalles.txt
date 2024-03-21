@@ -1,0 +1,3 @@
+añado mis diseños de compuertas logicas sin embargo no e llegado
+a un modelo aceptable de la compuerta xor dejo tanto un pdf como
+un diseño modificable
