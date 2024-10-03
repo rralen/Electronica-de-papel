@@ -7,10 +7,9 @@
 \usepackage{geometry}
 \usepackage{hyperref}
 
-
 \geometry{a4paper, margin=1in}
 
-\title{Electronica de papel}
+\title{Electrónica de Papel}
 \author{Sebastián Espinoza Domínguez}
 \date{\today}
 
@@ -18,58 +17,93 @@
 
 \maketitle
 
-\section{Introduccion}
-bueno en este documento abordare la creacion de dispositivos 
-abanzados echos completamente apartir de papel y grafito
-lapiz dando la capacidad de dibujar algoritmos
+\section{Introducción}
+En este documento abordaré la creación de dispositivos avanzados hechos completamente a partir de papel y grafito de lápiz,
+ lo que permite la capacidad de dibujar circuitos y algoritmos.
 
 \section{Componentes}
-lista de componentes echos apartir de papel y grafito en 2d
+Lista de componentes hechos a partir de papel y grafito en 2D.
+
 \subsection{Transistor}
-los transistores en su forma mas simplificada parece una "Y"
-mayuscula con dos lineas horizontales,La conexion no varia mucho
-a un transistor convencional
-\subsection{Recistensia}
-Son muy faciles de crear bastando con aumentar el grosor de la linea
-o disminuyendo la cantidad de grafito debido a que a 
-menor deposicion de grafito menor conductividad
-\subsection{Conexion}
-Son solo lineas remarcadas de grafito permitiendo la conductividad
-\subsection{Diodos}Los diosdos tienen forma de "H" con la linea 
-horizontal un poco mas arriba
-\subsection{Bobinas}Formas de espirales es decir enrolladas sobre
-si mismas estan compuestos de dos:
+Los transistores, en su forma más simplificada, parecen una "Y" mayúscula con dos líneas horizontales.
+La conexión no varía mucho respecto a un transistor convencional.
+
+\subsection{Resistencia}
+Son muy fáciles de crear, basta con aumentar el grosor de la línea o disminuir la cantidad de grafito. A menor deposición
+de grafito, menor será la conductividad.
+
+\subsection{Conexión}
+Las conexiones son simplemente líneas marcadas con grafito que permiten la conductividad.
+
+\subsection{Diodo}
+Los diodos tienen forma de "H", con la línea horizontal un poco más arriba.
+
+\subsection{Bobinas}
+Tienen forma de espirales, es decir, enrolladas sobre sí mismas. Están compuestas de dos tipos:
+
 \begin{itemize}
-    \item \textbf{Altavoz}Parecen bastones enrollados sobre si
-    asemejandose a las plantas de la pelicula de jack de 
-    tim burton
-    \item \textbf{Inductor}tienen una forma mas cuadrada con 
-    angulos exactos de 90º y usan la distancia entre si como
-    Condensador
+    \item \textbf{Altavoz}: Parecen bastones enrollados sobre sí mismos, asemejándose a las plantas de la película de Jack
+    de Tim Burton.
+    \item \textbf{Inductor}: Tienen una forma más cuadrada, con ángulos exactos de 90º. Utilizan la distancia entre ellos 
+    como condensador.
 \end{itemize}
+
 \subsection{Condensador}
-hay dos dfromas de acerlo sin embargo ninguna me a convencido
-y aun no determino las reglas correctas para manejarlas
+Hay dos formas de hacerlo, sin embargo, ninguna me ha convencido y aún no determino las reglas correctas para su manejo.
+
 \begin{itemize}
-    \item \textbf{2D}
-    Se dibujan dos lineas paralelas entre si a una distancia muy
-    pequeña entre si usando el papel como almacenaje de energuia
-    \item \textbf{Doblez}
-    Crear un doblez que se asemeje a origami: se hace una marca en el área que será la parte
-    inferior y otra en la superior, dejando un espacio en la parte inferior para el paso de la
-    terminal superior, que se doblará sobre la primera. Al añadir un poco de cinta adhesiva o
-    material similar en medio, funciona como un condensador convencional.
-\end{itemize}
-\subsection{Compuertas Logicas}
-se Pueden
-\begin{itemize}
-    \item \textbf{Memoria}
-    \item \textbf{Otros circuitos}
+    \item \textbf{2D}: Se dibujan dos líneas paralelas entre sí, a una distancia muy pequeña, utilizando el papel como
+    almacén de energía.
+    \item \textbf{Doblez}: Se crea un doblez similar al origami. Se hace una marca en el área que será la parte inferior
+    y otra en la superior, dejando un espacio en la parte inferior para el paso de la terminal superior, que se doblará 
+    sobre la primera. Al añadir un poco de cinta adhesiva o material similar en medio, funciona como un condensador convencional.
 \end{itemize}
 
-\section{Actuadores}
+\subsection{Compuertas Lógicas}
+    Se pueden crear fácilmente a partir de transistores. Sin embargo, puede ser complicado conectarlas manualmente debido al cuidado
+    con las entradas y salidas. Para facilitar esto, he estado utilizando software de diseño de circuitos con herramientas de
+    autoconexión, donde se definen las conexiones, y como estas son básicamente las mismas, es fácilmente adaptable.
+
+\begin{itemize}
+    \item \textbf{Memoria}: Claramente, la memoria de papel no es fiable; es muy sensible y ocupa mucho más espacio
+     en comparación con las memorias convencionales. Sin embargo, para programas sencillos, puede ser útil. Recomiendo
+    evitar el uso de condensadores, ya que a mayor complejidad, menor fiabilidad. Es mejor usar arreglos NAND o flip-flops SR.
+    \item \textbf{Otros circuitos}: Se pueden hacer desde calculadoras, multiplexores, etc. Es un proceso laborioso
+    y al principio puede ser un tanto lento.
+\end{itemize}
+
+\section{Actuadores de Papel}
+Los actuadores de papel son útiles para la robótica a un costo extremadamente bajo, aunque no son muy efectivos
+por sí solos debido a su naturaleza. Sirven principalmente para presentaciones, pero yo los usaría en combinación
+ con otros elementos, como microfluidos o autoensamble.
+
+Con "actuadores" me refiero a que se mueven; sin embargo, en comparación con los componentes anteriores, esto requiere
+ mucha más energía, normalmente alcanzada con 30V y repulsión magnética.
+
+A continuación, describo distintos patrones y sus efectos:
 
 
+    \subsection {Lineal} Se dibuja una línea sobre sí misma. Debería parecerse a una "n" en las partes negativa y positiva.
+     Cuando fluye suficiente corriente, se doblará en la dirección de la marca.
+    \subsection {Zigzag} Provoca contracciones, aunque no son muy impresionantes. Si aumentas la corriente tras observar el
+     primer efecto, es probable que se queme.
+    \subsection {Enrollar} Este patrón sirve para sujetar objetos. Simplemente haz lo mismo que en el patrón lineal, pero
+     en una tira más larga y enróllela. Se enrollará bien, pero no ejercerá mucha presión.
+    \subsection {Cuadrícula}Funciona principalmente como sensor para detectar toques.
 
+Nota: Todos estos patrones funcionan como sensores táctiles.
+
+Las bobinas, al ser fabricadas, pueden generar vibraciones similares a las de un altavoz, por lo que son muy rápidas.
+ No he comprobado esto, pero he podido hacer pequeños robots voladores con componentes normales.
+
+\section{Recomendaciones}
+Pueden usarlos como deseen; se pueden crear cosas entretenidas al combinarlos adecuadamente. Sin embargo, recomiendo 
+aplicar estos principios en detalles pequeños y estéticos, como mover pequeñas decoraciones o ensamblar cosas.
+
+\section{A Futuro}
+Actualmente, estoy trabajando en un procesador muy sencillo que sea programable. La meta es crear uno de 8 bits con al menos 5 
+kBytes de memoria programable mediante un multiplexor. Además, quiero diseñarlo en forma de bloques para que el usuario final
+pueda agregar o quitar entradas y salidas. También planeo desarrollar una herramienta para compilar un diseño escrito en un
+prototipo viable, similar a los lenguajes de descripción de hardware en FPGA.
 
 \end{document}
